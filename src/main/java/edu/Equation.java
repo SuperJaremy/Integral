@@ -6,8 +6,8 @@ public enum Equation {
     FIRST("5x^3-2x^2+7x-14",
             x->5*Math.pow(x,3)-2*Math.pow(x,2)+7*x-14);
 
-    private String name;
-    private UnaryOperator<Double> function;
+    private final String name;
+    private final UnaryOperator<Double> function;
 
     Equation(String name, UnaryOperator<Double> function){
         this.name = name;
